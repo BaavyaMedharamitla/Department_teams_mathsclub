@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments - Maths Club</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0e0e10;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 3rem;
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px cyan;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px cyan; }
+            100% { text-shadow: 0 0 20px cyan; }
+        }
+
+        .container {
+            max-width: 1100px;
+        }
+
+        .card {
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 2px solid transparent;
+            transition: 0.4s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+        }
+
+        .card:hover {
+            border-color: #0ff;
+            box-shadow: 0 0 20px #0ff, 0 0 40px #00f5ff;
+            transform: translateY(-10px) scale(1.05);
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #0ff;
+            text-shadow: 0 0 8px #0ff, 0 0 20px cyan;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { text-shadow: 0 0 8px #0ff; }
+            50% { text-shadow: 0 0 15px #00f5ff; }
+            100% { text-shadow: 0 0 8px #0ff; }
+        }
+
+        .card p {
+            color: #ddd;
+            font-size: 1rem;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .text-decoration-none {
+            text-decoration: none;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 15px 0;
+            color: #fff;
+        }
+
+        /* Button hover effect */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 110%;
+            height: 110%;
+            background: linear-gradient(45deg, rgba(0, 255, 255, 0.5), rgba(0, 0, 255, 0.3));
+            z-index: -1;
+            transition: 0.4s ease-in-out;
+            border-radius: 20px;
+            opacity: 0;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Maths Club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="departments.html">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5 text-center">
+        <h2 class="mb-4">Departments</h2>
+        <div class="row g-4">
+            <div class="col-md-3 fade-in">
+                <a href="aids.html" class="text-decoration-none">
+                    <div class="card p-4 shadow">
+                        <h3>AIDS</h3>
+                        <p>Explore mathematical contributions.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 fade-in">
+                <a href="aiml.html" class="text-decoration-none">
+                    <div class="card p-4 shadow">
+                        <h3>AIML</h3>
+                        <p>Explore mathematical contributions.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 fade-in">
+                <a href="ece.html" class="text-decoration-none">
+                    <div class="card p-4 shadow">
+                        <h3>ECE</h3>
+                        <p>Explore mathematical contributions.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 fade-in">
+                <a href="eee.html" class="text-decoration-none">
+                    <div class="card p-4 shadow">
+                        <h3>EEE</h3>
+                        <p>Explore mathematical contributions.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 fade-in">
+                <a href="cse.html" class="text-decoration-none">
+                    <div class="card p-4 shadow">
+                        <h3>CSE</h3>
+                        <p>Explore mathematical contributions.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 fade-in">
+                <a href="it.html" class="text-decoration-none">
+                    <div class="card p-4 shadow">
+                        <h3>IT</h3>
+                        <p>Explore mathematical contributions.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">&copy; 2025 Maths Club, Panimalar Engineering College | Designed by INFINITE THINKERS</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

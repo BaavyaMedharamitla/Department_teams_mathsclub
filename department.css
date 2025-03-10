@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 2.5rem;
+    color: #ffcc70;
+    text-shadow: 0 0 10px #ffcc70, 0 0 20px #ffcc70, 0 0 30px #ff9500;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Department Cards */
+.card {
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glow Hover Effect */
+.card:hover {
+    border-color: #ffcc70;
+    box-shadow: 0 0 15px #ffcc70;
+    transform: translateY(-10px);
+}
+
+/* Glitter Animation for Text */
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    color: #ffcc70;
+    text-shadow: 0 0 10px #ffcc70;
+    animation: glitter 2s infinite linear;
+}
+
+/* Glitter Effect */
+@keyframes glitter {
+    0% { text-shadow: 0 0 10px #ffcc70; }
+    50% { text-shadow: 0 0 20px #ff9500; }
+    100% { text-shadow: 0 0 10px #ffcc70; }
+}
+
+/* Fade-in Effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Styling */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
