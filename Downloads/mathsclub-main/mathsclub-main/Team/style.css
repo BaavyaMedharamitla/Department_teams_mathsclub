@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+    background: #0a192f; /* Dark theme */
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* Headings */
+h2, h3 {
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Navbar Logo */
+.nav-logo {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+/* Math Symbol Logo */
+.corner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #1f4068;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.math-symbol {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sqrt {
+    display: flex;
+    align-items: baseline;
+}
+
+.root {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.number {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+/* HoD Cards */
+.hod-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background: #112240; /* Dark card */
+}
+
+.hod-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.hod-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* HoD Text */
+.hod-card .card-body {
+    text-align: center;
+}
+
+.hod-card .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.hod-card .department {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00d4ff;
+}
+
+.hod-card .degree {
+    font-size: 14px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Staff & Student Coordinator Cards */
+.info-card {
+    background: linear-gradient(135deg, #0a396c, #0056b3);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Icons for Staff & Student Cards */
+.info-card i {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+    to { text-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+}
+
+/* Buttons */
+.btn-custom {
+    background: #1E3A8A; /* Deep navy blue for a professional look */
+    color: white;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background: #0F172A; /* Darker navy on hover for elegance */
+    transform: scale(1.1);
+}
+
+.student-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.student-card:hover {
+    transform: scale(1.05);
+}
+
+.student-card img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures images fill the area properly */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    background: #fff;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #555;
+}
+

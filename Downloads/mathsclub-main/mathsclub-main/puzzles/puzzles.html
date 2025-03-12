@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Math Puzzles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="logo.jpg" alt="Math Club Logo" class="nav-logo-img">
+            <div class="nav-logo">Math Club</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../Home/index.html" class="nav-link">Home</a></li>
+            <li><a href="../about/about.html" class="nav-link">About</a></li>
+            <li><a href="../Activities/activities.html">Activities</a></li>
+            <li><a href="../gallery/gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="../Team/team.html" class="nav-link">Team</a></li>
+            <li><a href="#" class="nav-link active">Puzzles</a></li>
+            <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Math Adventures</h1>
+    </header>
+    
+    <div class="puzzle-container">
+        <section class="puzzle" id="numberSequence" data-type="Sequence">
+            <h2>Complete the Sequence</h2>
+            <div class="sequence-numbers">
+                <span id="sequenceDisplay"></span>
+                <input type="number" id="sequenceAnswer">
+            </div>
+            <button onclick="checkSequence()">Check Answer</button>
+            <button onclick="showSequenceAnswer()" class="show-answer">Show Answer</button>
+            <button onclick="newSequence()" class="new-sequence">New Sequence</button>
+            <p id="sequenceExplanation" class="explanation"></p>
+        </section>
+
+        <section class="puzzle" id="mathRiddle" data-type="Riddle">
+            <h2>Math Riddle</h2>
+            <p id="riddleQuestion"></p>
+            <input type="text" id="riddleAnswer">
+            <button onclick="checkRiddle()">Solve Riddle</button>
+            <button onclick="showRiddleAnswer()" class="show-answer">Show Answer</button>
+            <button onclick="newRiddle()" class="new-riddle">New Riddle</button>
+            <p id="riddleExplanation" class="explanation"></p>
+        </section>
+
+        <section class="puzzle" id="quickMath" data-type="Quick Math">
+            <h2>Quick Math</h2>
+            <div id="mathProblem"></div>
+            <input type="number" id="mathAnswer">
+            <button onclick="checkMath()">Submit</button>
+            <button onclick="showMathAnswer()" class="show-answer">Show Answer</button>
+            <p id="mathExplanation" class="explanation"></p>
+        </section>
+
+        <section class="puzzle" id="sudokuGame" data-type="Sudoku">
+            <h2>Sudoku Challenge</h2>
+            <div id="attemptsCounter">Attempts remaining: 3</div>
+            <div id="sudokuGrid" class="sudoku-grid"></div>
+            <div class="button-group">
+                <button onclick="checkSudoku()">Check Solution</button>
+                <button onclick="newGame()" class="show-answer">New Game</button>
+                <button onclick="useHelpKey()" id="helpKeyBtn">Help Key (3)</button>
+                <button onclick="revealSolution()" class="reveal-btn">Reveal Solution</button>
+            </div>
+            <p id="sudokuMessage" class="explanation"></p>
+        </section>
+
+        <section class="puzzle" id="patternPuzzle" data-type="Pattern">
+            <h2>Pattern Detective</h2>
+            <div class="pattern-grid">
+                <div id="patternDisplay"></div>
+                <input type="number" id="patternAnswer">
+            </div>
+            <p id="patternHint" class="hint"></p>
+            <button onclick="checkPattern()">Check Answer</button>
+            <button onclick="showPatternAnswer()" class="show-answer">Show Answer</button>
+            <button onclick="newPattern()" class="new-pattern">New Pattern</button>
+            <p id="patternExplanation" class="explanation"></p>
+        </section>
+
+        <section class="puzzle" id="cryptoMath" data-type="Crypto">
+            <h2>Crypto Math</h2>
+            <div class="crypto-puzzle">
+                <div id="cryptoRules"></div>
+                <input type="number" id="cryptoAnswer">
+            </div>
+            <button onclick="checkCrypto()">Solve</button>
+            <button onclick="showCryptoHint()" class="show-answer">Get Hint</button>
+            <button onclick="showCryptoAnswer()" class="show-answer">Show Answer</button>
+            <button onclick="newCrypto()" class="new-crypto">New Puzzle</button>
+            <p id="cryptoExplanation" class="explanation"></p>
+        </section>
+
+        <section class="puzzle" id="visualLogic" data-type="Visual">
+            <h2>Visual Logic</h2>
+            <div class="shape-pattern">
+                <div id="shapeValues" class="shapes"></div>
+                <div id="visualEquation" class="puzzle-equation"></div>
+                <input type="number" id="visualAnswer">
+            </div>
+            <button onclick="checkVisualLogic()">Check</button>
+            <button onclick="showVisualAnswer()" class="show-answer">Show Answer</button>
+            <button onclick="newVisualLogic()" class="new-visual">New Puzzle</button>
+            <p id="visualExplanation" class="explanation"></p>
+        </section>
+    </div>
+    <div class="back-button-container">
+        <button class="cta-button" onclick="this.classList.add('clicked'); window.location.href='../Activities/activities.html'" class="back-button">Back to Activities</button>
+ 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

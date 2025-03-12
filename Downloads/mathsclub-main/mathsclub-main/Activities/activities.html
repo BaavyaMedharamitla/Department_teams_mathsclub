@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Club Activities</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">
+                <div class="corner-logo">
+                    
+                    <div class="math-symbol">
+                        <div class="sqrt">
+                            <span class="root">√</span>
+                            <span class="number">x</span>
+                        </div>
+                    </div>
+                    <span>Maths Club</span>
+                </div>
+                
+            </a>
+            <div class="nav-links">
+                <a href="../Home/index.html"class="nav-link">Home</a>
+                <a href="../about/index.html" class="nav-link">About</a>
+                <a href="#" class="nav-link active">Activities</a>
+                <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
+                <a href="../team/index.html" class="nav-link">Team</a>
+                <a href="../puzzles/puzzles.html" class="nav-link">Puzzles</a>
+                <a href="../contact/index.html" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <header class="hero">
+        <h1>Discover Mathematical Excellence</h1>
+        <p class="tagline">Explore. Learn. Excel.</p>
+    </header>
+
+    <section class="info-card-section">
+        <div class="info-card">
+            <div class="info-header">
+                <i class="fas fa-info-circle"></i>
+                <h2>Important Information</h2>
+            </div>
+            <div class="info-content">
+                <div class="info-item">
+                    <i class="fas fa-calendar"></i>
+                    <div>
+                        <h3>Event Date</h3>
+                        <p>March 28, 2025</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Timing</h3>
+                        <p>12:00 PM - 3:00 PM</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Venue</h3>
+                        <p>CSBS Seminar Hall, CSBS Department</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <div>
+                        <h3>Eligibility</h3>
+                        <p>Open to all 1st year Students</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-footer">
+                <button class="register-btn" onclick="window.location.href='https://forms.gle/VCw1KrmSVvgyjHog9'">Register Now<br><small></small></button>
+                <p class="deadline">Registration Deadline: February 10, 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="description-section">
+        <div class="description-container">
+            <h2 class="description-title">Welcome to Mathematics Club Activities</h2>
+            <div class="description-content">
+                <p>Dive into a world of mathematical exploration where challenges meet creativity. Our activities are designed to enhance your mathematical abilities through various engaging formats:</p>
+                <div class="description-grid">
+                    <div class="description-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Skill Development</h3>
+                        <p>Build strong analytical and problem-solving capabilities through structured learning activities.</p>
+                    </div>
+                    <div class="description-item">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Competitive Spirit</h3>
+                        <p>Challenge yourself in competitions and quizzes designed to test your mathematical prowess.</p>
+                    </div>
+                    <div class="description-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Collaborative Learning</h3>
+                        <p>Join group activities and workshops to learn from peers and experienced mathematicians.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rounds-section">
+        <h2 class="section-title">Activities Rounds</h2>
+        <div class="rounds-container">
+            <div class="round-card">
+                <div class="round-number">01</div>
+                <h3>Round-1</h3>
+                <div class="round-details">
+                    <p><i class="fas fa-clock"></i> Duration: 30 minutes</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> MCQ Format</li>
+                        <li><i class="fas fa-check-circle"></i> Basic Concepts</li>
+                        <li><i class="fas fa-check-circle"></i> Logical Reasoning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="round-card">
+                <div class="round-number">02</div>
+                <h3>Round-2</h3>
+                <div class="round-details">
+                    <p><i class="fas fa-clock"></i> Duration: 20 minutes</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Problem Solving</li>
+                        <li><i class="fas fa-check-circle"></i> Sudoko</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced Concepts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="round-card">
+                <div class="round-number">03</div>
+                <h3>Final Round</h3>
+                <div class="round-details">
+                    <p><i class="fas fa-clock"></i> Duration: 60 minutes</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 35 Questions</li>
+                        <li><i class="fas fa-check-circle"></i> Speed Solve Showdown</li>
+                        <li><i class="fas fa-check-circle"></i> Rapid Fire</li>
+                        <li><i class="fas fa-check-circle"></i> Fastest Mind First</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="activities-section">
+        <h2 class="section-title">Our Activities</h2>
+        <div class="activities-tabs">
+            <button class="tab-btn active" data-tab="challenges">Challenges</button>
+            <button class="tab-btn" data-tab="competitive">Competition</button>
+            <button class="tab-btn" data-tab="presentations">Presentations</button>
+            <button class="tab-btn" data-tab="recreational">Activities</button>
+        </div>
+        
+        <div class="tab-content active" id="challenges">
+            <div class="activities-grid">
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-control">
+                        <button class="flip-indicator" aria-label="Click to flip card">
+                            <i class="fas fa-sync"></i> Click to flip
+                        </button>
+                    </div>
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="activity-showcase-card">
+                                <div class="card-icon basic">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Vedic Mathematics</h3>
+                                    <p class="card-description">Master ancient Indian mathematical techniques through progressive rounds.</p>
+                                    <div class="activity-stats">
+                                        <span><i class="fas fa-users-line"></i> 100+ Participants</span>
+                                        <span><i class="fas fa-clock"></i> 3 Rounds</span>
+                                        <span class="level-badge multi-level">
+                                            <i class="fas fa-signal"></i> Basic to Advanced
+                                        </span>
+                                    </div>
+                                    <button class="flip-btn">View Details <i class="fas fa-sync"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="rounds-info">
+                                <h3>Competition Rounds</h3>
+                                <div class="round-lines">
+                                    <div class="round-line basic-level">
+                                        <span class="line-number">01</span>
+                                        <div class="round-content">
+                                            <h4>Basic Round <span class="participant-count">100+ Students</span></h4>
+                                            <p>MCQ-based assessment covering fundamental Vedic Mathematics concepts and calculation methods.</p>
+                                        </div>
+                                    </div>
+                                    <div class="round-line intermediate-level">
+                                        <span class="line-number">02</span>
+                                        <div class="round-content">
+                                            <h4>Advanced Round <span class="participant-count">60+ Qualifiers</span></h4>
+                                            <p>Speed calculation challenges and advanced mental math problem-solving.</p>
+                                        </div>
+                                    </div>
+                                    <div class="round-line advanced-level">
+                                        <span class="line-number">03</span>
+                                        <div class="round-content">
+                                            <h4>Final Round <span class="participant-count">Top 10+</span></h4>
+                                            <p>Elite-level competition featuring complex calculations and rapid computation challenges.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="flip-btn">Back to Info <i class="fas fa-undo"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-control">
+                        <button class="flip-indicator" aria-label="Click to flip card">
+                            <i class="fas fa-sync"></i> Click to flip
+                        </button>
+                    </div>
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="activity-showcase-card">
+                                <div class="card-icon accent">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Aptitude Challenge</h3>
+                                    <p class="card-description">Progressive rounds of mathematical aptitude testing from basics to advanced.</p>
+                                    <div class="activity-stats">
+                                        <span><i class="fas fa-users-line"></i> 100+ Participants</span>
+                                        <span><i class="fas fa-clock"></i> 3 Rounds</span>
+                                        <span class="level-badge multi-level">
+                                            <i class="fas fa-signal"></i> Basic to Advanced
+                                        </span>
+                                    </div>
+                                    <button class="flip-btn">View Details <i class="fas fa-sync"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="rounds-info">
+                                <h3>Aptitude Rounds</h3>
+                                <div class="round-lines">
+                                    <div class="round-line basic-level">
+                                        <span class="line-number">01</span>
+                                        <div class="round-content">
+                                            <h4>MCQ Round <span class="participant-count">100+ Students</span></h4>
+                                            <p>Multiple choice questions testing fundamental mathematical concepts and logical reasoning.</p>
+                                        </div>
+                                    </div>
+                                    <div class="round-line intermediate-level">
+                                        <span class="line-number">02</span>
+                                        <div class="round-content">
+                                            <h4>Problem Solving <span class="participant-count">60+ Qualifiers</span></h4>
+                                            <p>Sudoku challenges and advanced mathematical problem-solving tasks.</p>
+                                        </div>
+                                    </div>
+                                    <div class="round-line advanced-level">
+                                        <span class="line-number">03</span>
+                                        <div class="round-content">
+                                            <h4>Rapid Fire <span class="participant-count">Top 10+</span></h4>
+                                            <p>High-intensity quick mathematical calculations and logical reasoning.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="flip-btn">Back to Info <i class="fas fa-undo"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="competitive">
+            <div class="activities-grid">
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-control">
+                        <button class="flip-indicator" aria-label="Click to flip card">
+                            <i class="fas fa-sync"></i> Click to flip
+                        </button>
+                    </div>
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="activity-showcase-card">
+                                <div class="card-icon basic">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Quiz Competition</h3>
+                                    <p class="card-description">Progressive mathematical quiz rounds from basics to advanced challenges.</p>
+                                    <div class="activity-stats">
+                                        <span><i class="fas fa-users-line"></i> 100+ Participants</span>
+                                        <span><i class="fas fa-clock"></i> 3 Rounds</span>
+                                        <span class="level-badge multi-level">
+                                            <i class="fas fa-signal"></i> Basic to Advanced
+                                        </span>
+                                    </div>
+                                    <button class="flip-btn">View Details <i class="fas fa-sync"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="rounds-info">
+                                <h3>Quiz Format</h3>
+                                <div class="round-lines">
+                                    <div class="round-line basic-level">
+                                        <span class="line-number">01</span>
+                                        <div class="round-content">
+                                            <h4>MCQ Round <span class="participant-count">100+ Students</span></h4>
+                                            <p>Basic mathematics MCQ assessment testing fundamental concepts and logical reasoning.</p>
+                                        </div>
+                                    </div>
+                                    <div class="round-line intermediate-level">
+                                        <span class="line-number">02</span>
+                                        <div class="round-content">
+                                            <h4>Problem Solving <span class="participant-count">60+ Qualifiers</span></h4>
+                                            <p>Advanced problem-solving and Sudoku challenges with time constraints.</p>
+                                        </div>
+                                    </div>
+                                    <div class="round-line advanced-level">
+                                        <span class="line-number">03</span>
+                                        <div class="round-content">
+                                            <h4>Rapid Fire <span class="participant-count">Top 10+</span></h4>
+                                            <p>Elite final round with rapid-fire questions and quick mathematical reasoning.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="flip-btn">Back to Info <i class="fas fa-undo"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creative Math Quiz Card -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-control">
+                        <button class="flip-indicator" aria-label="Click to flip card">
+                            <i class="fas fa-sync"></i> Click to flip
+                        </button>
+                    </div>
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="activity-showcase-card">
+                                <div class="card-icon gradient">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Fun Activities</h3>
+                                    <p class="card-description">Interactive quiz with creative problem-solving approaches.</p>
+                                    <div class="activity-stats">
+                                        <span><i class="fas fa-clock"></i> 20 Minutes</span>
+                                        <span><i class="fas fa-user-graduate"></i> Individual activity</span>
+                                        <span class="level-badge multi-level">
+                                            <i class="fas fa-brain"></i> Creative Learning
+                                        </span>
+                                    </div>
+                                    <button class="flip-btn">View Details <i class="fas fa-sync"></i></button>
+                                    <button class="flip-card-back">Back to Info<i class="fas fa-sync"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="rounds-info">
+                                <h3>Fun Activities</h3>
+                                <div class="round-lines">
+                                    <div class="round-line basic-level">
+                                        <span class="line-number"><i class="fas fa-pencil-alt"></i></span>
+                                        <div class="round-content">
+                                            <h4>Visual Math <span class="participant-count">Individual</span></h4>
+                                            <p>Solve mathematical problems using visual and creative approaches.</p>
+                                        </div>
+                                    </div>
+                                    <div class="round-line intermediate-level">
+                                        <span class="line-number"><i class="fas fa-paint-brush"></i></span>
+                                        <div class="round-content">
+                                            <h4>Pattern Art <span class="participant-count">Creative Round</span></h4>
+                                            <p>Explore mathematical patterns through artistic visualization.</p>
+                                        </div>
+                                    </div>
+                                    <div class="round-line advanced-level">
+                                        <span class="line-number"><i class="fas fa-star"></i></span>
+                                        <div class="round-content">
+                                            <h4>Innovation Round <span class="participant-count">Final Task</span></h4>
+                                            <p>Create unique solutions to mathematical challenges.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="flip-card-back">Back to Info <i class="fas fa-undo"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="presentations">
+            <div class="activities-grid">
+                <div class="activity-card presentation-card">
+                    <i class="fas fa-file-powerpoint"></i>
+                    <h3>Paper Presentation</h3>
+                    <p>Present your research on mathematical concepts and theories.</p>
+                    <div class="presentation-stats">
+                        <span><i class="fas fa-clock"></i> 5 Minutes/Team</span>
+                        <span><i class="fas fa-users"></i> 50+ Participants</span>
+                    </div>
+                    <ul class="presentation-features">
+                        <li><i class="fas fa-check"></i> Research Methodology</li>
+                        <li><i class="fas fa-check"></i> Technical Writing</li>
+                        <li><i class="fas fa-check"></i> Presentation Skills</li>
+                    </ul>
+                </div>
+                <div class="activity-card presentation-card">
+                    <i class="fas fa-image"></i>
+                    <h3>Poster Presentation</h3>
+                    <p>Create visual representations of mathematical concepts.</p>
+                    <div class="presentation-stats">
+                        <span><i class="fas fa-clock"></i> 5 Minutes/Individual</span>
+                        <span><i class="fas fa-users"></i> 50+ Participantsspan>
+                    </div>
+                    <ul class="presentation-features">
+                        <li><i class="fas fa-check"></i> Creative Design</li>
+                        <li><i class="fas fa-check"></i> Visual Communication</li>
+                        <li><i class="fas fa-check"></i> Concept Illustration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="recreational">
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <i class="fas fa-chess"></i>
+                    <h3>Math Games</h3>
+                    <p>Learn mathematics through fun games and puzzles.</p>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Group Activities</h3>
+                    <p>Collaborate in team-based mathematical challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2 class="section-title">Activity Gallery</h2>
+        <div class="image-gallery">
+            <div class="gallery-item">
+                <img src="apic1.jpg " alt="Aptitude">
+                <div class="gallery-overlay">
+                    <h3>Aptitude</h3>
+                    <p>Students engaged in problem-solving activities</p>
+                    <span class="gallery-date">sep 2023</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="apic2.jpg" alt="Quiz Competition">
+                <div class="gallery-overlay">
+                    <h3>Quiz Competition</h3>
+                    <p>mathematics quiz event</p>
+                    <span class="gallery-date">oct 2023</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="apic3.jpg" alt="Vedic Maths">
+                <div class="gallery-overlay">
+                    <h3>Vedic Maths</h3>
+                    <p>students engaing in solving problems</p>
+                    <span class="gallery-date">Sep 2024</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="a4pic.jpg" alt="Presentation">
+                <div class="gallery-overlay">
+                    <h3>Student Presentations</h3>
+                    <p>Mathematical concept presentations</p>
+                    <span class="gallery-date">oct 2024</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="apica.jpg" alt="Aptitude">
+                <div class="gallery-overlay">
+                    <h3>Sudoko</h3>
+                    <p>Students solving maths puzzles</p>
+                    <span class="gallery-date">Oct 2024</span>
+                </div>
+         </div>
+         <div class="gallery-item">
+            <img src="qpic.jpg" alt="Aptitude">
+            <div class="gallery-overlay">
+                <h3>Rapid fire </h3>
+                <p>Think fast,Answer Faster</p>
+                <span class="gallery-date">Oct 2024</span>
+            </div>
+      </div>
+      <div class="gallery-item">
+        <img src="ppic.jpg" alt="Poster Presentation">
+        <div class="gallery-overlay">
+            <h3>Poster Presentation</h3>
+            <p>Mathematical Poster Presentation</p>
+            <span class="gallery-date">Oct 2024</span>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="apic.jpg" alt="Math Games">
+        <div class="gallery-overlay">
+            <h3>Fun Actiities</h3>
+            <p>Unlock the Magic of Numbeers!</p>
+            <span class="gallery-date">Oct 2024</span>
+        </div>
+    </section>
+   
+    <section class="participants-section">
+        <h2 class="section-title">Our Participation Statistics</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>Total Participants</h3>
+                    <div class="stat-number" data-target="500">0</div>
+                    <p>Active Members</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>Events Conducted</h3>
+                    <div class="stat-number" data-target="15">0</div>
+                    <p>Successful Events</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>Awards Won</h3>
+                    <div class="stat-number" data-target="25">0</div>
+                    <p>Achievement Milestones</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>Certifications</h3>
+                    <div class="stat-number" data-target="300">0</div>
+                    <p>Certified Participants</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="activities-grid">
+        <div class="activity-card">
+            <i class="fas fa-book"></i>
+            <h2>Previous Contest Papers</h2>
+            <p>Unlock the past,challenge your limits!</p>
+            <button class="cta-button" onclick="this.classList.add('clicked'); window.location.href='ROUND-1-Questions.pdf'" data-clicked="false">View Question Papers</button>
+        </div>
+        <div class="activity-card">
+            <i class="fas fa-puzzle-piece"></i>
+            <h2>Problem Solving</h2>
+            <p>Challenge yourself with engaging mathematical puzzles and problems.</p>
+            <button class="cta-button" onclick="this.classList.add('clicked'); window.location.href='../puzzles/puzzles.html'" data-clicked="false">Participate</button>
+        </div>
+        <div class="activity-card">
+            <i class="fas fa-check-circle"></i>
+            <h2>Answer Keys</h2>
+            <p>Check your solutions and learn from detailed explanations!</p>
+            <button class="cta-button" onclick="this.classList.add('clicked'); window.location.href='ROUND_1_Ans.pdf'" data-clicked="false">View Answers</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
